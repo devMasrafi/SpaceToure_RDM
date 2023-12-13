@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Bellefair&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/* ======nav_bar====== */
+
+.navWrapper{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 485px;
+    z-index: 99;
+}
+
+.logo{
+    margin-left: 155px;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.menu{
+    position: relative;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+
+    display: flex;
+    column-gap: 48px;
+    background-color: rgba(255, 255, 255, 0.182);
+    height: 96px;
+    width: 830px;
+    padding: 40px 125px;
+}
+.menu li a{
+    color: #FFF;
+    letter-spacing: 2.7px;
+    line-height: auto;
+}
+.menu span{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.menu::after{
+    content: "";
+    position: absolute;
+    width: 437px;
+    height: 2px;
+    background-color: #979797;
+    top: 48px;
+    left: -400px;
+}
+/* =======banner_items===== */
+.bannerMain{
+    position: relative;
+    background: url(src/assets/bannerImg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.headerText{
+    width: 450px;
+    padding: 337px 0 131px 0;
+
+}
+.headerText h3{
+    font-size: 28px;
+    font-weight: 400px;
+    letter-spacing: 4.7px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #FFF;
+}
+.headerText h1{
+    font-size: 150px;
+    font-family: 'Bellefair', serif;
+    line-height: auto;
+    letter-spacing: 0;
+    color: #FFF;
+    margin: 24px 0;
+}
+
+.headerText p{
+    color: #FFF;
+    line-height: 32px;
+    font-size: 18px;
+    letter-spacing: 0;
+}
